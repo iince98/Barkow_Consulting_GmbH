@@ -7,6 +7,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 
 a=pd['Year']
 b=['Existing residential property']
+st.text(df.columns)
 st.text (df.head())
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
