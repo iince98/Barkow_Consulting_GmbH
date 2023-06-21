@@ -7,7 +7,7 @@ df = pd.read_csv('son.csv')
 
 a=[1,2,3,4,5,14,12]
 b=[1,2,3,4,5,14,12]
-st.text (df[0])
+st.text (df.columns[0])
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
