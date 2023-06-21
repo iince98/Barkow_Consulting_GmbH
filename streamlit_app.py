@@ -9,3 +9,17 @@ ax.scatter (x=a, y=b)
 ax.set_xlabel("x ekseni")
 ax.set_ylabel("y ekseni")
 st.pyplot(fig)
+
+possible_platforms = ["Carousell", "Foo", "Bar"]
+
+for pfm in possible_platforms:
+    st.markdown(
+        f"""
+    <style>
+    span[data-baseweb="tag"]:has(span[title="{pfm}"]) {{
+    background-color: blue !important;
+    }}
+    </style>
+    """,
+        unsafe_allow_html=True,
+    )
