@@ -17,7 +17,7 @@ for pfm in possible_platforms:
         f"""
     <style>
     span[data-baseweb="tag"]:has(span[title="{pfm}"]) {{
-    background-color: blue !important;
+    background-color: green !important;
     }}
     </style>
     """,
