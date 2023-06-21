@@ -10,7 +10,7 @@ ax.set_xlabel("x ekseni")
 ax.set_ylabel("y ekseni")
 st.pyplot(fig)
 
-possible_platforms = ["Carousell", "Foo", "Bar"]
+possible_platforms = ["Carousell", "Foo", "Bar1"]
 
 for pfm in possible_platforms:
     st.markdown(
