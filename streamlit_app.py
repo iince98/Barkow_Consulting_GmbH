@@ -23,3 +23,7 @@ for pfm in possible_platforms:
     """,
         unsafe_allow_html=True,
     )
+
+st.markdown("Report Category Specific Parameters")
+
+st.multiselect("Platform", possible_platforms)
