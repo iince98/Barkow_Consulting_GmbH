@@ -29,7 +29,7 @@ st.markdown("Report Category Specific Parameters")
 
 st.multiselect("Platform", possible_platforms)
 
-st.markdown(f'<style> div.css-1wivap2.e1vioofd3 {background-color:red;}</style>',unsafe_allow_html=True)
+st.markdown(f'<style> {div.css-1wivap2.e1vioofd3 {background-color:red;}}</style>',unsafe_allow_html=True)
 col1, col2, col3 = st.columns(3)
 col1.metric("Temperature", "70 °F", "1.2 °F")
 col2.metric("Wind", "9 mph", "-8%")
