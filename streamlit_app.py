@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 a=[1,2,3,4,5,14,12]
 b=[1,2,3,4,5,14,12]
 st.header ("Section Start")
-st.text ("Bugün bayramdir1")
+st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
 ax.scatter (x=a, y=b)
 ax.set_xlabel("x ekseni")
