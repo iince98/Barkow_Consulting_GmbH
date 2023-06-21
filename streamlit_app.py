@@ -30,7 +30,7 @@ st.markdown("Report Category Specific Parameters")
 st.multiselect("Platform", possible_platforms)
 with open ('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
-    st.text ({f.read()})
+    st.text (f.read())
 
 
 col1, col2, col3 = st.columns(3)
