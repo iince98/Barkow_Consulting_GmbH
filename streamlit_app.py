@@ -5,8 +5,8 @@ import pandas as pd
 
 df = pd.read_csv('son.csv', delimiter=';')
 
-a=[1,2,3,4,5,14,12]
-b=[1,2,3,4,5,14,12]
+a=pd['Year']
+b=['Existing residential property']
 st.text (df.head())
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
