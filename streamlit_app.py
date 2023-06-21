@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-df = pd.read_csv('son.csv')
+df = pd.read_csv('son.csv', delimiter=';')
 
 a=[1,2,3,4,5,14,12]
 b=[1,2,3,4,5,14,12]
-st.text (df.columns[0][0])
+st.text (df.head())
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
