@@ -4,6 +4,8 @@ import pandas as pd
 
 
 df = pd.read_csv('son.csv', delimiter=';')
+df['birlesik']=df['Year']+df['Quarter']
+
 x_ekseni='Year'
 a=df[x_ekseni]
 b=df['mortgage_rates']
