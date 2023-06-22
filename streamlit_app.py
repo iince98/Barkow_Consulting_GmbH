@@ -15,6 +15,7 @@ fig, ax = plt.subplots(1,1)
 ax.scatter (x=a, y=b)
 ax.set_xlabel(x_ekseni)
 ax.set_ylabel("b")
+fig.update_xaxes(tickangle= -90)  
 st.pyplot(fig)
 
 possible_platforms = ["Carousell", "Foo", "Bar1"]
