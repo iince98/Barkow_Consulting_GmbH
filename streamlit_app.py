@@ -12,9 +12,10 @@ st.text (df['Year'])
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
-ax.scatter (x=a, y=b, tickangle= -90)
-ax.set_xlabel(x_ekseni)
-ax.set_ylabel("b")
+ax.scatter (x=a, y=b)
+plt.xticks(x_ekseni, "b", rotation='horizontal')
+
+
 st.pyplot(fig)
 
 possible_platforms = ["Carousell", "Foo", "Bar1"]
