@@ -12,9 +12,9 @@ b=df['mortgage_rates']
 st.text(df.columns)
 st.text (df.info(verbose = False))
 st.header ("Section Start")
-st.text ("Bugün bayramdir2")
-fig, ax = plt.subplots(1,1)
 
+
+fig, ax = plt.subplots(1,1)
 fig = plt.figure(figsize=(12, 5))
 plt.plot(df['Year'],b)
 plt.xticks(a, a, rotation='horizontal')
