@@ -12,8 +12,10 @@ st.text (df['Year'])
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
-ax.scatter (x=a, y=b)
-plt.xticks(x_ekseni, "b", rotation='horizontal')
+
+fig = plt.figure(figsize=(12, 5))
+plt.plot(a, b)
+plt.xticks(x, a, rotation='horizontal')
 
 
 st.pyplot(fig)
