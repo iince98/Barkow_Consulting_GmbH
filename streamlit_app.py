@@ -14,8 +14,8 @@ st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
 
 fig = plt.figure(figsize=(12, 5))
-plt.plot(a, b)
-plt.xticks(x, a, rotation='horizontal')
+plt.plot(df['Year'],b)
+plt.xticks(a, a, rotation='horizontal')
 
 
 st.pyplot(fig)
