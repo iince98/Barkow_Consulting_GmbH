@@ -10,7 +10,7 @@ x_ekseni='Year'
 a=df[x_ekseni]
 b=df['mortgage_rates']
 st.text(df.columns)
-st.text (df.info)
+st.text (df.info())
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
