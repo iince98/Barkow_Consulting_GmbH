@@ -5,6 +5,8 @@ import pandas as pd
 
 df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
+df['Period'] = df.Year.str.cat(df.Quarter)
+print(df['Period'])
 
 x_ekseni='Year'
 a=df[x_ekseni]
@@ -48,4 +50,4 @@ with open ('style.css') as f:
 col1, col2, col3 = st.columns(3)
 col1.metric("Temperature", "70 °F", "1.2 °F")
 col2.metric("Wind", "9 mph", "-8%")
-col3.metric("Humidity", "86%", "4%","2")
+col3.metric("Humidity", "86%", "4%")
