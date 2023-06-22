@@ -4,8 +4,8 @@ import pandas as pd
 
 
 df = pd.read_csv('son.csv', delimiter=';')
-
-a=df['Year']
+x_ekseni='Year'
+a=df[x_ekseni]
 b=df['mortgage_rates']
 st.text(df.columns)
 st.text (df.head())
@@ -13,8 +13,8 @@ st.header ("Section Start")
 st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
 ax.scatter (x=a, y=b)
-ax.set_xlabel("x ekseni")
-ax.set_ylabel("y ekseni")
+ax.set_xlabel(x_ekseni)
+ax.set_ylabel("b")
 st.pyplot(fig)
 
 possible_platforms = ["Carousell", "Foo", "Bar1"]
