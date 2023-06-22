@@ -4,20 +4,20 @@ import pandas as pd
 
 
 df = pd.read_csv('son.csv', delimiter=';')
-df['birlesik']=df['Year']+df['Quarter']
+#df['birlesik']=df['Year']+df['Quarter']
 
 x_ekseni='Year'
 a=df[x_ekseni]
 b=df['mortgage_rates']
 st.text(df.columns)
-st.text (df.head())
+st.text (df.info)
 st.header ("Section Start")
 st.text ("Bugün bayramdir2")
 fig, ax = plt.subplots(1,1)
 
 fig = plt.figure(figsize=(12, 5))
 plt.plot(df['Year'],b)
-plt.xticks(a, df['birlesik'], rotation='horizontal')
+plt.xticks(a, a, rotation='horizontal')
 
 
 st.pyplot(fig)
