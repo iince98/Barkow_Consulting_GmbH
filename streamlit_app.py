@@ -6,7 +6,7 @@ import pandas as pd
 df = pd.read_csv('son.csv', delimiter=';')
 
 a=df['Year']
-b=df['Existing_residential_property']
+b=df['mortgage_rates']
 st.text(df.columns)
 st.text (df.head())
 st.header ("Section Start")
