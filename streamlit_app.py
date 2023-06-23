@@ -2,24 +2,25 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 
-
+pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
-#df['Period'] = df['Year'].str.cat(df['Quarter'])
-#print(df['Period'])
+df['Period'] = df.Year.str.cat(df.Quarter)
+print(df['Period'])
 
 x_ekseni='Year'
 a=df[x_ekseni]
 b=df['mortgage_rates']
+st.header ("Missing values")
+st.text(df.isnull().sum())
 st.text(df.columns)
-st.text (df.info(verbose = False))
+st.text (df.describe())
 st.header ("Section Start")
 
 
 fig, ax = plt.subplots(1,1)
 fig = plt.figure(figsize=(12, 5))
 plt.plot(df['Year'],b)
-plt.xticks(a, a, rotation='horizontal')
 
 
 st.pyplot(fig)
