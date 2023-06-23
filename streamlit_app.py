@@ -5,8 +5,7 @@ import pandas as pd
 pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
-df['Period'] = df.Year.str.cat(df.Quarter)
-print(df['Period'])
+
 
 x_ekseni='Year'
 a=df[x_ekseni]
