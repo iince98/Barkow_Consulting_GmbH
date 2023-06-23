@@ -10,7 +10,7 @@ x_ekseni='Year'
 a=df[x_ekseni]
 b=df['mortgage_rates']
 st.text(df.columns)
-st.text (df.info(verbose = False))
+st.text (df.describe)
 st.header ("Section Start")
 
 
