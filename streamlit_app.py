@@ -1,6 +1,8 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
+import mpld3
+import streamlit.components.v1 as components
 
 pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
@@ -23,6 +25,8 @@ plt.plot(df['Year'],b)
 
 
 st.pyplot(fig)
+fig_html = mpld3.fig_to_html(fig)
+components.html(fig_html, height=600)
 
 possible_platforms = ["Carousell", "Foo", "Bar1"]
 
