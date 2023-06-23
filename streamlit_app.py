@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 pd.set_option('display.max_columns', None)
-
+st.dataframe(data=None, width=None, height=None, *, use_container_width=False, hide_index=None, column_order=None, column_config=None)
 df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
