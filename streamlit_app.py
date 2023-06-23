@@ -18,7 +18,6 @@ st.header ("Section Start")
 fig, ax = plt.subplots(1,1)
 fig = plt.figure(figsize=(12, 5))
 plt.plot(df['Year'],b)
-plt.xticks(a, a, rotation='horizontal')
 
 
 st.pyplot(fig)
