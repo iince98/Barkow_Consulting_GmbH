@@ -11,7 +11,7 @@ print(df['Period'])
 x_ekseni='Year'
 a=df[x_ekseni]
 b=df['mortgage_rates']
-st.header ("Missing values")
+st.header ("Missing values1")
 st.text(df.isnull().sum())
 st.text(df.columns)
 st.text (df.describe())
