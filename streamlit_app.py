@@ -10,6 +10,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 x_ekseni='Year'
 a=df[x_ekseni]
 b=df['mortgage_rates']
+st.text(df.info())
 st.text(df.columns)
 st.text (df.describe())
 st.header ("Section Start")
