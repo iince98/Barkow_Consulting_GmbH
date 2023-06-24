@@ -42,7 +42,7 @@ st.header("Columns")
 st.text(df.columns)
 
 st.header("Describe")
-st.text (df.describe())
+st.text (df.describe().T)
 
 st.header ("Section Start")
 
