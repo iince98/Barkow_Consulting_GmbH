@@ -9,10 +9,10 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
-df['Quarter'] = df['Quarter'].apply(lambda x: int(x.split()[1])*3)
+df['Quarter'] = df['Quarter'].apply(lambda x: "0"+str(int(x.split()[1])*3))
+df['Year'] = df['Year'].astype(str) + df['Quarter']
 
-df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y'))
-df['quar'] = pd.PeriodIndex(df.Year, freq='Q')
+df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%MM'))
 
 year = df['Year']
 const = df['Construction_costs']
