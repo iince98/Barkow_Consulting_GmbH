@@ -14,15 +14,18 @@ material = df['Material_costs']
 labour = df['Labour_costs']
 
 st.header ("Missing values1")
+
 st.text(df.isnull().sum())
+
 st.text(df.columns)
+
 st.text (df.describe())
+
 st.header ("Section Start")
 
+print(type(df['Year']))
 
-""" fig, ax = plt.subplots(1,1)
-fig = plt.figure(figsize=(12, 5))
-plt.plot(df['Year'],b) """
+
 fig, ax = plt.subplots(1,1)
 plt.plot(df['Year'],const)
 plt.plot(df['Year'],material)
@@ -34,25 +37,10 @@ components.html(fig_html, height=600)
 
 possible_platforms = ["Carousell", "Foo", "Bar1"]
 
-for pfm in possible_platforms:
-    st.markdown(
-        f"""
-    <style>
-    span[data-baseweb="tag"]:has(span[title="{pfm}"]) {{
-    background-color: green !important;
-    color:red;
-    }}
-    </style>
-    """,
-        unsafe_allow_html=True,
-    )
 
-st.markdown("Report Category Specific Parameters")
-
-st.multiselect("Platform", possible_platforms)
-with open ('style.css') as f:
-    st.markdown(f'<style>{f.read()}</style>',unsafe_allow_html=True)
-    st.text (f.read())
+with open ('style.css') as file1:
+    st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
+    st.text (file1.read())
 
 
 col1, col2, col3 = st.columns(3)
