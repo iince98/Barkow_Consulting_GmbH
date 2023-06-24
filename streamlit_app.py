@@ -9,9 +9,8 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
-df['quarter1'] = pd.PeriodIndex(df['Year'], freq='Q')
 
-year = list(df['quarter1'])
+year = df['Year']
 const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
