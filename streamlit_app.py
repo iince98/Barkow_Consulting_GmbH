@@ -11,7 +11,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 # = df['Year'].astype(str) + "_" + df['Quarter']
 st.text(df['Quarter'][6])
 
-df['Quarter'] = df['Quarter'].apply(lambda x: "0"+str(int(x.split()[1])*3))
+df['Quarter'] = df['Quarter'].apply(lambda x: st.text("0"+str(int(x.split()[1])*3)))
 
 for i in range (len(df['Year'])):
     df['Year'][i] = str(df['Year'][i]) + df['Quarter'][0]
