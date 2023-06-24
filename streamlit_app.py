@@ -51,7 +51,7 @@ st.header ("Section Start")
 fig, ax = plt.subplots(1,1)
 plt.plot(year,const,color="r")
 plt.plot(year,material,color="b")
-#plt.plot(year,const,labour="green")
+plt.plot(year,const,labour="g")
 #plt.plot(df['Year'],material)
 #plt.plot(df['Year'],labour)
 
