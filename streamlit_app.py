@@ -13,14 +13,7 @@ const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
 
-st.header("Task description: Comparison of house prices, (construction prices - optional), and mortgage rates/volumes. The period of the time series is quarterly between 2003-2023.
-
-Steps:
-1- Get data (Some reference links are provided below.) 
-2- Create interactive plotly charts (EDA)
-3- Explain general insights gained from basic EDA (summary statistics(mean, min, max), negative/positive correlated etc.,).
-4- Explain insights related to the last quarter (eg. the change in the current quarter is ..., etc.)
-5- Show results on a preferably on a Streamlit  app.")
+st.header("Task description: Comparison of house prices, (construction prices - optional), and mortgage rates/volumes. The period of the time series is quarterly between 2003-2023.")
 
 st.header ("Missing values1")
 
