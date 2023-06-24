@@ -9,9 +9,10 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 
-x_ekseni='Year'
-a=df[x_ekseni]
-b=df['mortgage_rates']
+const = df['Construction_costs']
+material = df['Material_costs']
+labour = df['Labour_costs']
+
 st.header ("Missing values1")
 st.text(df.isnull().sum())
 st.text(df.columns)
@@ -19,10 +20,13 @@ st.text (df.describe())
 st.header ("Section Start")
 
 
-fig, ax = plt.subplots(1,1)
+""" fig, ax = plt.subplots(1,1)
 fig = plt.figure(figsize=(12, 5))
-plt.plot(df['Year'],b)
-
+plt.plot(df['Year'],b) """
+fig, ax = plt.subplots(1,1)
+plt.plot(df['Year'],const)
+plt.plot(df['Year'],material)
+plt.plot(df['Year'],labour)
 
 st.pyplot(fig)
 fig_html = mpld3.fig_to_html(fig)
