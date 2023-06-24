@@ -22,7 +22,7 @@ st.text("3- Explain general insights gained from basic EDA summary statistics me
 st.text("4- Explain insights related to the last quarter eg. the change in the current quarter is ..., etc.")
 st.text("5- Show results on a preferably on a Streamlit  app.")
 
-st.text(type(df['Quarter']))
+st.text(df['Quarter'][0])
 for i in range (len(df)):
     df['Year'][i] = df['Year'][i].str() + df['Quarter'][i].str() 
 print(df['Year'])
