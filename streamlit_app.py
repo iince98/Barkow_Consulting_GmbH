@@ -23,6 +23,8 @@ const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
 
+st.header ("Task")
+
 st.text("Task description: Comparison of house prices, (construction prices - optional), \nand mortgage rates/volumes. The period of the time series is quarterly between \n2003-2023.")
 
 st.text("Steps:")
@@ -35,7 +37,7 @@ st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
 
-st.header ("Missing values1")
+st.header ("Missing values")
 
 st.text(df.isnull().sum())
 
