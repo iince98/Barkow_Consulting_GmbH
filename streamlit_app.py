@@ -25,10 +25,6 @@ st.text("5- Show results on a preferably on a Streamlit  app.")
 
 df['Year'] = df['Year'].astype(str) + "_" + df['Quarter']
 
-st.text(df['Year'])
-# for i in range (len(df)):
-#     df['Year1'][i] = str(df['Year'][i]) + str(df['Quarter'][i]) 
-# st.text(df['Year1'])
 
 st.header ("Missing values1")
 
@@ -45,7 +41,7 @@ st.header ("Section Start")
 print(type(df['Year']))
 
 
-fig, ax = plt.subplots(1,1)
+fig, ax = plt.subplots(1,3)
 plt.plot(df['Year'],const)
 plt.plot(df['Year'],material)
 plt.plot(df['Year'],labour)
