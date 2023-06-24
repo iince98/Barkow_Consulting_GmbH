@@ -47,6 +47,8 @@ st.text (df.describe(include="all"))
 
 
 
+
+
 fig, ax = plt.subplots(1,1)
 plt.plot(year,const,marker=".", markersize="5",color="r", label="const")
 plt.plot(year,material,marker=".", markersize="5",color="b", label="material" )
@@ -55,7 +57,7 @@ plt.legend(loc="upper left")
 
 st.header ("Heatmap")
 
-sns.heatmap(df_col.corr(), ax=ax)
+sns.heatmap(df.corr(), ax=ax)
 st.write(fig)
 
 
