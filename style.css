@@ -13,6 +13,11 @@ div.css-5rimss.eqr7zpz4{
             animation-name: example;
             animation-duration: 3s;  
             animation-fill-mode: forwards;
+
+            @keyframes example {
+                from {top: 0px;}
+                to {top: 200px; background-color: blue;}
+              }
           
     }
 
