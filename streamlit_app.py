@@ -42,7 +42,7 @@ st.text(df['Year'][0])
 
 
 fig, ax = plt.subplots(1,1)
-plt.plot(year,const)
+plt.plot(material,const)
 #plt.plot(df['Year'],material)
 #plt.plot(df['Year'],labour)
 
