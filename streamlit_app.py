@@ -9,6 +9,8 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
+df['Quarter'] = df['Quarter'].apply(lambda x: int(split(str(x))[1])*3)
+
 df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y'))
 df['quar'] = pd.PeriodIndex(df.Year, freq='Q')
 
@@ -41,7 +43,7 @@ st.text (df.describe())
 
 st.header ("Section Start")
 
-st.text(df['quar'][1])
+st.text(df['Quarter'][1])
 
 
 fig, ax = plt.subplots(1,1)
