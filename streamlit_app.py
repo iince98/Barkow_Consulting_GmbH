@@ -10,9 +10,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
 df['Quarter'] = df['Quarter'].apply(lambda x: "0"+str(int(x.split()[1])*3))
-df['Year'] = df['Year'].astype(str)
-
-df['Year'] = df['Year'] + df['Quarter']
+kk = str(df['Year'][0]) + df['Quarter'][0]
 
 df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%MM'))
 
@@ -45,7 +43,7 @@ st.text (df.describe())
 
 st.header ("Section Start")
 
-st.text(df['Quarter'][0])
+st.text(kk)
 
 
 fig, ax = plt.subplots(1,1)
