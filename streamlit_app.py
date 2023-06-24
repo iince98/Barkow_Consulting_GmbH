@@ -23,7 +23,7 @@ st.text("4- Explain insights related to the last quarter eg. the change in the c
 st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
-df['Year'] = df['Year'].astype(str) + df['Quarter']
+df['Year'] = df['Year'].astype(str) + "_" + df['Quarter']
 
 st.text(df['Year'])
 # for i in range (len(df)):
