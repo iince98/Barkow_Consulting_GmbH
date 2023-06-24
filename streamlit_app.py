@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import mpld3
 import streamlit.components.v1 as components
+import seaborn as sns
 
 pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
@@ -44,7 +45,9 @@ st.text(df.columns)
 st.header("Describe")
 st.text (df.describe(include="all"))
 
-st.header ("Section Start")
+st.header ("Heatmap")
+sns.heatmap(df.drop(['Year'],axis=1).corr(), annot = True, vmin = -1, vmax = 1)
+
 
 
 
