@@ -10,7 +10,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
 df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y'))
-df['Year'] = pd.PeriodIndex(df.Year, freq='Q')
+df['quar'] = pd.PeriodIndex(df.Year, freq='Q')
 
 year = df['Year']
 const = df['Construction_costs']
@@ -41,7 +41,7 @@ st.text (df.describe())
 
 st.header ("Section Start")
 
-st.text(type(df['Year'][0]))
+st.text(type(df['quar'][0]))
 
 
 fig, ax = plt.subplots(1,1)
