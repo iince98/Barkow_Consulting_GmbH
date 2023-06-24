@@ -13,7 +13,7 @@ const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
 
-st.error('''
+st.title('''
 Line 1  
 Line 2
 ''')
