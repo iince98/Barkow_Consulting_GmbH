@@ -8,7 +8,8 @@ pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
-
+df['Year'] = df['Year'].astype(str) + "_" + df['Quarter']
+year = df['Year']
 const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
@@ -23,7 +24,6 @@ st.text("4- Explain insights related to the last quarter eg. the change in the c
 st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
-df['Year'] = df['Year'].astype(str) + "_" + df['Quarter']
 
 
 st.header ("Missing values1")
@@ -42,7 +42,7 @@ st.text(df['Year'][0])
 
 
 fig, ax = plt.subplots(1,1)
-plt.plot(df['Year'],const)
+plt.plot(year,const)
 plt.plot(df['Year'],material)
 plt.plot(df['Year'],labour)
 
