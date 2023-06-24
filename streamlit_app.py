@@ -13,7 +13,8 @@ const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
 
-st.text("Task description: Comparison of house prices, (construction prices - optional), and mortgage rates/volumes. The period of the time series is quarterly between 2003-2023.")
+st.text("Task description: Comparison of house prices, (construction prices - optional), and mortgage rates/volumes. The period of the time series is quarterly between 2003-2023.\n
+aaaaaa")
 
 st.header ("Missing values1")
 
