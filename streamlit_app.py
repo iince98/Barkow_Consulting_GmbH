@@ -9,7 +9,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
-df['Quarter'] = df['Quarter'].apply(lambda x: str(x)[:-1])
+df['Quarter'] = df['Quarter'].apply(lambda x: x)
 
 df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y'))
 df['quar'] = pd.PeriodIndex(df.Year, freq='Q')
