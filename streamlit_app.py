@@ -16,7 +16,7 @@ labour = df['Labour_costs']
 st.header ("Missing values1")
 
 st.text(df.isnull().sum())
-st.header()
+st.header("")
 
 st.text(df.columns)
 
