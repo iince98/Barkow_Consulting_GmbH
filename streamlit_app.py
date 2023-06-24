@@ -12,7 +12,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 df['Quarter'] = df['Quarter'].apply(lambda x: "0"+str(int(x.split()[1])*3))
 kk = str(df['Year'][0]) + df['Quarter'][0]
 
-df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%MM'))
+df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y'))
 
 year = df['Year']
 const = df['Construction_costs']
