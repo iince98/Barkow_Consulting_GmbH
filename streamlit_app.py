@@ -10,7 +10,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
 df['Quarter'] = df['Quarter'].apply(lambda x: "0"+str(int(x.split()[1])*3))
-df['Year'] = df['Year'].apply(lambda x: str(x))
+df['Year'] = df['Year'].astype(str)
 
 df['Year'] = df['Year'] + df['Quarter']
 
