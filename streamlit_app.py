@@ -52,6 +52,8 @@ fig, ax = plt.subplots(1,1)
 plt.plot(year,const,marker=".", markersize="5",color="r")
 plt.plot(year,material,marker=".", markersize="5",color="b")
 plt.plot(year,labour,marker=".", markersize="5",color="g")
+plt.legend(loc="upper left")
+
 
 
 
