@@ -51,7 +51,7 @@ st.header ("Section Start")
 fig, ax = plt.subplots(1,1)
 plt.plot(year,const,marker=".", markersize="5",color="r", label="const")
 plt.plot(year,material,marker=".", markersize="5",color="b", label="material" )
-plt.plot(year,labour,marker=".", markersize="5",color="g")
+plt.plot(year,labour,marker=".", markersize="5",color="g", label="labour")
 plt.legend(loc="upper left")
 
 
