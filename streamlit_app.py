@@ -30,8 +30,7 @@ existing_residential = df['Existing_residential_property']
 mortgage = df['mortgage_rates']
 
 
-st.markdown(
-   f'<style>p {background-image: url("https://www.barkowconsulting.com/img/barkow_consulting_logo.svg");}</style>',unsafe_allow_html=True)
+st.markdown(f'<style>p {background-image: url("https://www.barkowconsulting.com/img/barkow_consulting_logo.svg");}</style>',unsafe_allow_html=True)
 #image = Image.open('imza_copy.png')
 #st.image(image, caption='Barkow Consulting GmbH')
 
