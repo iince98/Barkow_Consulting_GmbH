@@ -4,6 +4,8 @@ import pandas as pd
 import mpld3
 import streamlit.components.v1 as components
 import seaborn as sns
+from PIL import Image
+
 
 pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
@@ -27,6 +29,8 @@ new_residential = df['New_residential_property']
 existing_residential = df['Existing_residential_property']
 mortgage = df['mortgage_rates']
 
+image = Image.open('barkow_consulting_logo.svg')
+st.image(image, caption='Barkow Consulting GmbH')
 
 st.header ("Task")
 
