@@ -9,6 +9,8 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
+st.text(df['Quarter'][6])
+
 df['Quarter'] = df['Quarter'].apply(lambda x: "0"+str(int(x.split()[1])*3))
 
 for i in range (len(df['Year'])):
