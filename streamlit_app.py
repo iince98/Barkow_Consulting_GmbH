@@ -16,9 +16,9 @@ df['Quarter'] = df['Quarter'].apply(lambda x: str(int(x.split()[1])*3))
 for i in range (len(df['Year'])):
     df['Year'][i] = str(df['Year'][i]) + df['Quarter'][i]
 
-st.text(df['Year'])
 
-#df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%MM'))
+df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%MM'))
+st.text(df['Year'])
 
 year = df['Year']
 const = df['Construction_costs']
