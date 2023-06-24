@@ -8,8 +8,8 @@ pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
-df['Year'] = df['Year'].astype(str) + "_" + df['Quarter']
-df['quarter1'] = pd.PeriodIndex(df.Year, freq='Q')
+# = df['Year'].astype(str) + "_" + df['Quarter']
+df['quarter1'] = pd.PeriodIndex(df["Year"], freq='Q')
 
 year = list(df['quarter1'])
 const = df['Construction_costs']
