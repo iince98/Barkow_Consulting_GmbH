@@ -29,7 +29,7 @@ new_residential = df['New_residential_property']
 existing_residential = df['Existing_residential_property']
 mortgage = df['mortgage_rates']
 
-image = Image.open('barkow_consulting_logo.svg')
+image = Image.open('imza copy.png')
 st.image(image, caption='Barkow Consulting GmbH')
 
 st.header ("Task")
