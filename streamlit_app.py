@@ -48,7 +48,7 @@ plt.plot(df['Year'],labour)
 
 #st.pyplot(fig)
 fig_html = mpld3.fig_to_html(fig)
-components.html(fig_html, height=600, weight=800)
+components.html(fig_html, height=600)
 
 possible_platforms = ["Carousell", "Foo", "Bar1"]
 
