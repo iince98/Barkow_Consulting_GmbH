@@ -38,7 +38,7 @@ st.text (df.describe())
 
 st.header ("Section Start")
 
-print(type(df['Year']))
+st.text(df['Year'])
 
 
 fig, ax = plt.subplots(1,1)
