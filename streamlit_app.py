@@ -47,7 +47,7 @@ st.text (df.describe(include="all"))
 
 st.header ("Heatmap")
 fig1, ax1 = plt.subplots()
-sns.heatmap(df.corr(), ax=ax1)
+sns.heatmap(df.drop['Year', 'Quarter', ].corr(), ax=ax1)
 st.write(fig1)
 
 
