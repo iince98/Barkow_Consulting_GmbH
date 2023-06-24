@@ -16,7 +16,6 @@ for i in range (len(df['Year'])):
 
 
 df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%m'))
-st.text(df['Year'])
 
 year = df['Year']
 const = df['Construction_costs']
@@ -50,7 +49,9 @@ st.header ("Section Start")
 
 
 fig, ax = plt.subplots(1,1)
-plt.plot(year,const)
+plt.plot(year,const,color="red")
+plt.plot(year,material,color="blue")
+plt.plot(year,const,labour="green")
 #plt.plot(df['Year'],material)
 #plt.plot(df['Year'],labour)
 
