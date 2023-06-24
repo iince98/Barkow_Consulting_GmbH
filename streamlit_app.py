@@ -39,8 +39,6 @@ st.text (df.describe())
 
 st.header ("Section Start")
 
-st.text(df['quarter1'])
-
 
 fig, ax = plt.subplots(1,1)
 plt.plot(year,const)
