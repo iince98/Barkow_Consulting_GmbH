@@ -22,6 +22,11 @@ year = df['Year']
 const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
+house_price = df['House_price_index']
+new_residential = df['New_residential_property']
+existing_residential = df['Existing_residential_property']
+mortgage = df['mortgage_rates']
+
 
 st.header ("Task")
 
@@ -56,11 +61,14 @@ st.write(fig1)
 st.header ("Graphic")
 
 fig, ax = plt.subplots(1,1)
-plt.plot(year,const,marker=".", markersize="5",color="r", label="const")
+plt.plot(year,const,marker=".", markersize="5",color="r", label="construction")
 plt.plot(year,material,marker=".", markersize="5",color="b", label="material" )
 plt.plot(year,labour,marker=".", markersize="5",color="g", label="labour")
+plt.plot(year,house_price,marker=".", markersize="5",color="c", label="house_price")
+plt.plot(year,new_residential,marker=".", markersize="5",color="m", label="new_residential")
+plt.plot(year,existing_residential,marker=".", markersize="5",color="y", label="existing_residential")
+plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
 plt.legend(loc="upper left")
-
 
 
 fig_html = mpld3.fig_to_html(fig)
