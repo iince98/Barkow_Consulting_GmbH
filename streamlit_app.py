@@ -28,7 +28,7 @@ plt.plot(df['Year'],const)
 plt.plot(df['Year'],material)
 plt.plot(df['Year'],labour)
 
-st.pyplot(fig)
+#st.pyplot(fig)
 fig_html = mpld3.fig_to_html(fig)
 components.html(fig_html, height=600)
 
