@@ -15,7 +15,7 @@ for i in range (len(df['Year'])):
     df['Year'][i] = str(df['Year'][i]) + df['Quarter'][i]
 
 
-df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%MM'))
+df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%YYYY%M'))
 st.text(df['Year'])
 
 year = df['Year']
