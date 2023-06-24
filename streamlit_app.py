@@ -41,7 +41,7 @@ st.text (df.describe())
 
 st.header ("Section Start")
 
-st.text(df['quar'][0], df['quar'][1])
+st.text(df['quar'][1])
 
 
 fig, ax = plt.subplots(1,1)
