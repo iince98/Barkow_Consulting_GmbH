@@ -41,14 +41,14 @@ st.header ("Section Start")
 print(type(df['Year']))
 
 
-fig, ax = plt.subplots(1,3)
+fig, ax = plt.subplots(1,1)
 plt.plot(df['Year'],const)
 plt.plot(df['Year'],material)
 plt.plot(df['Year'],labour)
 
 #st.pyplot(fig)
 fig_html = mpld3.fig_to_html(fig)
-components.html(fig_html, height=600)
+components.html(fig_html, height=600, weight=800)
 
 possible_platforms = ["Carousell", "Foo", "Bar1"]
 
