@@ -46,7 +46,7 @@ plt.plot(df['Year'],const)
 plt.plot(df['Year'],material)
 plt.plot(df['Year'],labour)
 
-plt.xlabel('df['Year']')
+plt.xlabel('df["Year"]')
 
 
 #st.pyplot(fig)
