@@ -13,7 +13,16 @@ const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
 
-st.text("Task description: Comparison of house prices, (construction prices - optional), \nand mortgage rates/volumes. The period of the time series is quarterly between \n2003-2023.")
+st.text("Task description: Comparison of house prices, (construction prices - optional), \nand mortgage rates/volumes. The period of the time series is quarterly between \n2003-2023.\n
+Steps:\n
+1- Get data (Some reference links are provided below.) \n
+2- Create interactive plotly charts (EDA)\n
+3- Explain general insights gained from basic EDA summary statistics mean, min, max , \nnegative/positive correlated etc.,.\n
+4- Explain insights related to the last quarter eg. the change in the current quarter \nis ..., etc.\n
+5- Show results on a preferably on a Streamlit  app.
+")
+
+st.text("Steps:")
 
 
 st.header ("Missing values1")
