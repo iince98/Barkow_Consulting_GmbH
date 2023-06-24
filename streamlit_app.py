@@ -9,7 +9,7 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 # = df['Year'].astype(str) + "_" + df['Quarter']
-df['quarter1'] = pd.PeriodIndex(df["Year"], freq='Q')
+df['quarter1'] = pd.PeriodIndex(df['Year'], freq='Q')
 
 year = list(df['quarter1'])
 const = df['Construction_costs']
@@ -40,7 +40,7 @@ st.text (df.describe())
 
 st.header ("Section Start")
 
-st.text(df['Year'][0])
+st.text(df['quarter1'][0])
 
 
 fig, ax = plt.subplots(1,1)
