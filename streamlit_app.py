@@ -49,9 +49,9 @@ st.header ("Section Start")
 
 
 fig, ax = plt.subplots(1,1)
-plt.plot(year,const,marker="o",color="r")
-plt.plot(year,material,color="b")
-plt.plot(year,labour,color="g")
+plt.plot(year,const,marker=".", markersize="15",color="r")
+plt.plot(year,material,marker=".", markersize="15",color="b")
+plt.plot(year,labour,marker=".", markersize="15",color="g")
 
 
 
