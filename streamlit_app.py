@@ -45,10 +45,6 @@ st.text(df.columns)
 st.header("Describe")
 st.text (df.describe(include="all"))
 
-st.header ("Heatmap")
-sns.heatmap(df.drop(['Year'],axis=1).corr(), annot = True, vmin = -1, vmax = 1)
-
-
 
 
 fig, ax = plt.subplots(1,1)
@@ -56,6 +52,11 @@ plt.plot(year,const,marker=".", markersize="5",color="r", label="const")
 plt.plot(year,material,marker=".", markersize="5",color="b", label="material" )
 plt.plot(year,labour,marker=".", markersize="5",color="g", label="labour")
 plt.legend(loc="upper left")
+
+st.header ("Heatmap")
+
+sns.heatmap(df_col.corr(), ax=ax)
+st.write(fig)
 
 
 
