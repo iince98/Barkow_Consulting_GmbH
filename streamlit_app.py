@@ -31,14 +31,7 @@ mortgage = df['mortgage_rates']
 
 
 st.markdown(
-   f'''
-   <style>
-   p {
-   background-image: url(imza_copy.png’);
-   }
-   </style>
-   ''',
-   unsafe_allow_html=True)
+   f'<style>p {background-image: url("imza_copy.png");}</style>',unsafe_allow_html=True)
 #image = Image.open('imza_copy.png')
 #st.image(image, caption='Barkow Consulting GmbH')
 
