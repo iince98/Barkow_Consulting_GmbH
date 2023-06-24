@@ -3,22 +3,7 @@ div.css-1r6slb0.esravye1 {
 }
 
 div.css-5rimss.eqr7zpz4{
-        background-color:#fefefe; 
-        
-      
-            width: 100px;
-            height: 100px;
-            background: red;
-            position: relative;
-            animation-name: example;
-            animation-duration: 3s;  
-            animation-fill-mode: forwards;
-
-            @keyframes example {
-                from {top: 0px;}
-                to {top: 200px; background-color: blue;}
-              }
-          
+        background-color:#fefefe;  
     }
 
     div.css-5rimss.eqr7zpz4:hover{
