@@ -9,7 +9,9 @@ df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
 df['Year'] = df['Year'].astype(str) + "_" + df['Quarter']
-year = df['Year']
+df['quarter1'] = pd.PeriodIndex(df.Year, freq='Q')
+
+year = list(df['quarter1'])
 const = df['Construction_costs']
 material = df['Material_costs']
 labour = df['Labour_costs']
@@ -42,11 +44,10 @@ st.text(df['Year'][0])
 
 
 fig, ax = plt.subplots(1,1)
-plt.plot(material,const)
+plt.plot(year,const)
 #plt.plot(df['Year'],material)
 #plt.plot(df['Year'],labour)
 
-plt.xlabel(year[0])
 
 
 #st.pyplot(fig)
