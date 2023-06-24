@@ -8,8 +8,6 @@ pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 
-# = df['Year'].astype(str) + "_" + df['Quarter']
-st.text(df['Quarter'][6])
 
 df['Quarter'] = df['Quarter'].apply(lambda x: str(int(x.split()[1])*3)) 
 
