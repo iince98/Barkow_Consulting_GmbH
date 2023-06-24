@@ -24,8 +24,8 @@ st.text("5- Show results on a preferably on a Streamlit  app.")
 
 st.text(df['Quarter'][0])
 for i in range (len(df)):
-    df['Year'][i] = str(df['Year'][i]) + str(df['Quarter'][i]) 
-print(df['Year'])
+    df['Year1'][i] = str(df['Year'][i]) + str(df['Quarter'][i]) 
+st.text(df['Year1'])
 
 st.header ("Missing values1")
 
