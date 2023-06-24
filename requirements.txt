@@ -3,4 +3,4 @@ matplotlib==3.7.1
 pandas==2.0.2
 mpld3==0.5.9
 seaborn==0.12.2
-PIL==1.1.6
+Pillow==2.2.1
