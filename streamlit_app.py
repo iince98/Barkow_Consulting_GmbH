@@ -14,7 +14,7 @@ st.text(df['Quarter'][6])
 df['Quarter'] = df['Quarter'].apply(lambda x: "0"+str(int(x.split()[1])*3) if len(x.split()[1])==1 else str(int(x.split()[1])*3)) 
 
 for i in range (len(df['Year'])):
-    df['Year'][i] = str(df['Year'][i]) + df['Quarter'][0]
+    df['Year'][i] = str(df['Year'][i]) + df['Quarter'][i]
 
 st.text(df['Year'])
 
