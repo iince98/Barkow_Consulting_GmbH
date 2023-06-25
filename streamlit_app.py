@@ -70,6 +70,9 @@ st.write(fig1)
 
 st.header ("Graphic")
 
+plt.ion()
+
+
 fig, ax = plt.subplots(1,1)
 plt.plot(year,const,marker=".", markersize="5",color="r", label="construction")
 plt.plot(year,material,marker=".", markersize="5",color="b", label="material" )
