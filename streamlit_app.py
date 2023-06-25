@@ -77,15 +77,19 @@ plt.plot(year,labour,marker=".", markersize="5",color="g", label="labour")
 plt.plot(year,house_price,marker=".", markersize="5",color="c", label="house_price")
 plt.plot(year,new_residential,marker=".", markersize="5",color="m", label="new_residential")
 plt.plot(year,existing_residential,marker=".", markersize="5",color="y", label="existing_residential")
-plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
 plt.legend(loc="upper left")
-
-
 fig_html = mpld3.fig_to_html(fig)
 components.html(fig_html, height=600)
+
+
+fig1, ax1 = plt.subplots(1,1)
+plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
+plt.legend(loc="upper left")
+fig_html1 = mpld3.fig_to_html(fig1)
+components.html(fig_html1, height=600)
+
 
 
 with open ('style.css') as file1:
     st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
     st.text (file1.read())
-
