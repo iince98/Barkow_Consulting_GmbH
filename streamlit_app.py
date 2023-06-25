@@ -42,7 +42,7 @@ st.text("Steps:")
 st.text("1- Get data (Some reference links are provided below.")
 st.text("2- Create interactive plotly charts (EDA)")
 st.text("3- Explain general insights gained from basic EDA summary statistics mean, min,\n max , negative/positive correlated etc.,")
-st.text("4- Explain insights related to the last quarter eg. the change in the current quarter is ..., etc.")
+st.text("4- Explain insights related to the last quarter eg. the change in the \ncurrent quarter is ..., etc.")
 st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
