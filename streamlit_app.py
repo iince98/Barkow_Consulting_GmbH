@@ -58,6 +58,7 @@ st.header("Columns")
 st.text(df.columns)
 
 st.header("Describe")
+st.text ("The information gives a quick and simple description of the data. It can include\n Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range,\n standard deviation, etc. Statistics summary gives a high-level idea to identify whether\n the data has any outliers, data entry error, distribution of data such as the data is\n normally distributed or left/right skewed.")
 st.text (df.describe(include="all"))
 
 st.header ("Heatmap")
