@@ -49,7 +49,7 @@ st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
 st.header ("Missing values")
-st.text ("Data pre-processing, Feature Engineering, and EDA are fundamental early steps\n after data collection. Still, they are not limited to where the data is simply\n visualized, plotted, and manipulated, without any assumptions, to assess the quality of\n the data and building models.")
+st.text ("Data pre-processing, Feature Engineering, and EDA are fundamental early steps\n after data collection. Still, they are not limited to where the data is simply\n visualized, plotted, and manipulated, without any assumptions, to assess the \nquality of the data and building models.")
 
 st.text(df.isnull().sum())
 
