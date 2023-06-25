@@ -68,9 +68,7 @@ sns.heatmap(df.drop(['Year', 'Quarter'], axis=1).corr(), ax=ax1)
 st.write(fig1)
 
 
-st.header ("Graphic")
-
-plt.ion()
+st.header ("Graphics")
 
 
 fig, ax = plt.subplots(1,1)
@@ -91,6 +89,10 @@ plt.legend(loc="upper left")
 
 fig_html1 = mpld3.fig_to_html(fig1)
 components.html(fig_html1, height=600)
+
+st.write("Explanation on last quarter of 2023")
+st.markdown ("Explanation on last quarter of 2023:As the name suggests, Multivariate analysis looks at more than two variables. Multivariate analysis is one of the most useful methods to determine relationships and analyze patterns for any dataset. A heat map is widely been used for Multivariate Analysis. Heat Map gives the correlation between the variables, whether it has a positive or negative correlation. In our example heat map shows the correlation between the variables.")
+
 
 
 
