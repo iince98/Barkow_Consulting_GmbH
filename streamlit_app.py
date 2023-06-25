@@ -75,7 +75,6 @@ plt.plot(year,new_residential,marker=".", markersize="5",color="m", label="new_r
 plt.plot(year,existing_residential,marker=".", markersize="5",color="y", label="existing_residential")
 plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
 plt.legend(loc="upper left")
-ax.xlabel="aa" 
 
 
 fig_html = mpld3.fig_to_html(fig)
