@@ -47,20 +47,18 @@ st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
 st.header ("Introduce")
-st.text ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA)\n are fundamental early steps after data collection. Still, they are not limited to where\n the data is simply visualized, plotted, and manipulated, without any assumptions, \nto assess thequality of the data and building models.")
+st.markdown ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps after data collection. Still, they are not limited to where the data is simply visualized, plotted, and manipulated, without any assumptions, to assess thequality of the data and building models.")
 
 st.header ("Missing values")
-st.text ("Finding 'missing values' is widely been in all pre-processing steps to \n identify null values in the data. With this, we get the number of missing records in \neach column")
+st.text ("Finding 'missing values' is widely been in all pre-processing steps to identify null values in the data. With this, we get the number of missing records in each column")
 
 st.text(df.isnull().sum())
 
 st.header("Columns")
-st.markdown("The information gives a quick and simple description of the data.Can include Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range, standard deviation, etc. Statistics summary gives a high-level idea to identify whether the data has any outliers, data entry error, distribution of data such as the data is normally distributed or left/right skewed In python, this can be achieved using describe() describe() function gives all statistics summary of data")
-
 st.text(df.columns)
 
 st.header("Describe")
-st.text ("The information gives a quick and simple description of the data. It can\n include Count, Mean, Standard Deviation, median, mode, minimum value, maximum \nvalue, range, standard deviation, etc. Statistics summary gives a high-level idea to identify\n whether the data has any outliers, data entry error, distribution of data such as the\n data is normally distributed or left/right skewed.")
+st.markdown ("The information gives a quick and simple description of the data. It can include Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range, standard deviation, etc. Statistics summary gives a high-level idea to identify whether the data has any outliers, data entry error, distribution of data such as the data is normally distributed or left/right skewed.")
 st.text (df.describe(include="all"))
 
 st.header ("Heatmap")
