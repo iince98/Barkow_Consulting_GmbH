@@ -46,10 +46,11 @@ st.text("4- Explain insights related to the last quarter eg. the change in the c
 st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
-
+st.header ("Introduce")
+st.text ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps\n after data collection. Still, they are not limited to where the data is simply\n visualized, plotted, and manipulated, without any assumptions, to assess the\nquality of the data and building models.")
 
 st.header ("Missing values")
-st.text ("Data pre-processing, Feature Engineering, and EDA are fundamental early steps\n after data collection. Still, they are not limited to where the data is simply\n visualized, plotted, and manipulated, without any assumptions, to assess the\nquality of the data and building models.")
+st.text ("Finding 'missing values' is widely been in all pre-processing steps to identify\n null values in the data. With this, we get the number of missing records in each column")
 
 st.text(df.isnull().sum())
 
