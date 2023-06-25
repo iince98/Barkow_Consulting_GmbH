@@ -85,7 +85,7 @@ components.html(fig_html, height=600)
 fig1, ax1 = plt.subplots(1,1)
 plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
 plt.legend(loc="upper left")
-plot.Show()
+plt.show()
 fig_html1 = mpld3.fig_to_html(fig1)
 components.html(fig_html1, height=600)
 
