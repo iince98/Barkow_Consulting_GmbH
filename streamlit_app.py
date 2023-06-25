@@ -55,7 +55,7 @@ st.text ("Finding 'missing values' is widely been in all pre-processing steps to
 st.text(df.isnull().sum())
 
 st.header("Columns")
-st.markdown(f'<p> {The information gives a quick and simple description of the data.Can include Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range, standard deviation, etc. Statistics summary gives a high-level idea to identify whether the data has any outliers, data entry error, distribution of data such as the data is normally distributed or left/right skewed In python, this can be achieved using describe() describe() function gives all statistics summary of data} </p>' unsafe_allow_html=True)
+st.markdown("The information gives a quick and simple description of the data.Can include Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range, standard deviation, etc. Statistics summary gives a high-level idea to identify whether the data has any outliers, data entry error, distribution of data such as the data is normally distributed or left/right skewed In python, this can be achieved using describe() describe() function gives all statistics summary of data")
 
 st.text(df.columns)
 
