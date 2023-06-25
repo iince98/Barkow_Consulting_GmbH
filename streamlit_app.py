@@ -70,6 +70,12 @@ st.write(fig1)
 
 st.header ("Graphics")
 
+fig1, ax1 = plt.subplots(1,1)
+plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
+plt.legend(loc="upper left")
+fig_html1 = mpld3.fig_to_html(fig1)
+components.html(fig_html1, height=600)
+
 
 fig, ax = plt.subplots(1,1)
 plt.plot(year,const,marker=".", markersize="5",color="r", label="construction")
@@ -83,15 +89,8 @@ fig_html = mpld3.fig_to_html(fig)
 components.html(fig_html, height=600)
 
 
-fig1, ax1 = plt.subplots(1,1)
-plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
-plt.legend(loc="upper left")
-
-fig_html1 = mpld3.fig_to_html(fig1)
-components.html(fig_html1, height=600)
-
 st.write("Explanation on last quarter of 2023")
-st.markdown ("Explanation on last quarter of 2023:As the name suggests, Multivariate analysis looks at more than two variables. Multivariate analysis is one of the most useful methods to determine relationships and analyze patterns for any dataset. A heat map is widely been used for Multivariate Analysis. Heat Map gives the correlation between the variables, whether it has a positive or negative correlation. In our example heat map shows the correlation between the variables.")
+st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
 
 
 
