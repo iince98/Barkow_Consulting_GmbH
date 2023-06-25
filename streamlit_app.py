@@ -50,7 +50,7 @@ st.header ("Introduce")
 st.markdown ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps after data collection. Still, they are not limited to where the data is simply visualized, plotted, and manipulated, without any assumptions, to assess thequality of the data and building models.")
 
 st.header ("Missing values")
-st.text ("Finding 'missing values' is widely been in all pre-processing steps to identify null values in the data. With this, we get the number of missing records in each column")
+st.markdown ("Finding 'missing values' is widely been in all pre-processing steps to identify null values in the data. With this, we get the number of missing records in each column")
 
 st.text(df.isnull().sum())
 
