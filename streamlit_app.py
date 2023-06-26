@@ -5,7 +5,8 @@ import mpld3
 import streamlit.components.v1 as components
 import seaborn as sns
 from PIL import Image
-
+import numpy as np
+import plotly.figure_factory as ff
 
 # Add histogram data
 x1 = np.random.randn(200) - 2
