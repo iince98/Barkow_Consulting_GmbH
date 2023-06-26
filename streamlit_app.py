@@ -6,6 +6,8 @@ import streamlit.components.v1 as components
 import seaborn as sns
 from PIL import Image
 import plotly.figure_factory as ff
+import numpy as np
+
 
 
 
