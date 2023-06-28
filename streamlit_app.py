@@ -8,21 +8,24 @@ from PIL import Image
 import numpy as np
 import plotly.figure_factory as ff
 
-# Add histogram data
-x1 = np.random.randn(200) - 2
-x2 = np.random.randn(200)
-x3 = np.random.randn(200) + 2
 
-# Group data together
-hist_data = [x1, x2, x3]
+def a():
 
-group_labels = ['Group 1', 'Group 2', 'Group 3']
+    # Add histogram data
+    x1 = np.random.randn(200) - 2
+    x2 = np.random.randn(200)
+    x3 = np.random.randn(200) + 2
 
-# Create distplot with custom bin_size
-fig = ff.create_distplot(hist_data, group_labels)
+    # Group data together
+    hist_data = [x1, x2, x3]
 
-# Plot!
-st.plotly_chart(fig, use_container_width=True)
+    group_labels = ['Group 1', 'Group 2', 'Group 3']
+
+    # Create distplot with custom bin_size
+    fig = ff.create_distplot(hist_data, group_labels)
+
+    # Plot!
+    st.plotly_chart(fig, use_container_width=True)
 
 
 
@@ -57,6 +60,10 @@ mortgage = df['mortgage_rates']
 
 
 options = st.sidebar.radio('Pages', options = ['A', 'B'])
+if options =='A':
+    a()
+
+
 st.markdown(f'<img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com">',unsafe_allow_html=True)
 #image = Image.open('imza_copy.png')
 #st.image(image, caption='Barkow Consulting GmbH')
