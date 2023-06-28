@@ -29,6 +29,7 @@ def a():
 
 
 
+
 def (b):
     
     pd.set_option('display.max_columns', None)
@@ -126,8 +127,20 @@ def (b):
         st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
         st.text (file1.read())
 
+
+def C():
+    placeholder = st.empty()
+    placeholder.empty()
+
+
+
+
+
 options = st.sidebar.radio('Pages', options = ['A', 'B'])
 if options =='A':
     a()
 elif options =='B':
     b()
+
+elif options =='C':
+    c()
