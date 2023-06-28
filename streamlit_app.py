@@ -15,20 +15,13 @@ def a():
     x1 = np.random.randn(200) - 2
     x2 = np.random.randn(200)
     x3 = np.random.randn(200) + 2
-
     # Group data together
     hist_data = [x1, x2, x3]
-
     group_labels = ['Group 1', 'Group 2', 'Group 3']
-
     # Create distplot with custom bin_size
     fig = ff.create_distplot(hist_data, group_labels)
-
     # Plot!
     st.plotly_chart(fig, use_container_width=True)
-
-
-
 
 def (b):
     
@@ -128,7 +121,7 @@ def (b):
         st.text (file1.read())
 
 
-def C():
+def c():
     placeholder = st.empty()
     placeholder.empty()
 
@@ -136,7 +129,7 @@ def C():
 
 
 
-options = st.sidebar.radio('Pages', options = ['A', 'B'])
+options = st.sidebar.radio('Pages', options = ['A', 'B','C'])
 if options =='A':
     a()
 elif options =='B':
