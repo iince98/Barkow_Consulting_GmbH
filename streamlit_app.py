@@ -23,8 +23,7 @@ def a():
     # Plot!
     st.plotly_chart(fig, use_container_width=True)
 
-def (b):
-    
+def b():    
     pd.set_option('display.max_columns', None)
     df = pd.read_csv('son.csv', delimiter=';')
     #df['birlesik']=df['Year']+df['Quarter']
@@ -134,6 +133,5 @@ if options =='A':
     a()
 elif options =='B':
     b()
-
 elif options =='C':
     c()
