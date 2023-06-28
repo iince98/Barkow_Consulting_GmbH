@@ -56,6 +56,7 @@ existing_residential = df['Existing_residential_property']
 mortgage = df['mortgage_rates']
 
 
+options = st.sidebar.radio('Pages', options = ['A', 'B'])
 st.markdown(f'<img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com">',unsafe_allow_html=True)
 #image = Image.open('imza_copy.png')
 #st.image(image, caption='Barkow Consulting GmbH')
