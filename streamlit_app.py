@@ -66,10 +66,6 @@ def Dataset():
     st.markdown ("https://www.destatis.de/en/Themes/Economy/Prices/Construction-Prices-And-Real-Property-Prices/_node.html")
     st.markdown ("https://www.bundesbank.de/dynamic/action/en/statistics/time-series-databases/time-series-databases/745582/745582?tsId=BBK01.SUD131&dateSelect=2023")
 
-    x = [1,2,3,4,5]
-    y = [1,3,4,5,6]
-    fig = px.line( x = x , y = y, title = "A simple line graph")
-    st.plotly_chart(fig, use_container_width=True)  
 
 def EDA():
 
@@ -105,6 +101,9 @@ def EDA():
     components.html(fig_html1, height=600)
 
 
+
+    fig = px.line( x = year , y = const, title = "A simple line graph")
+    st.plotly_chart(fig, use_container_width=True)  
 
 
 
