@@ -24,6 +24,10 @@ new_residential = df['New_residential_property']
 existing_residential = df['Existing_residential_property']
 mortgage = df['mortgage_rates']
 
+with open ('style.css') as file1:
+        st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
+        st.text (file1.read())
+
 def introduction():
 
     st.header ("Task")
@@ -110,9 +114,7 @@ def EDA():
     st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
 
 
-    with open ('style.css') as file1:
-        st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
-        st.text (file1.read())
+    
 
 
 options = st.sidebar.radio('Options', options = ['Introduction', 'Dataset','EDA'])
