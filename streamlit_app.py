@@ -101,8 +101,8 @@ def EDA():
     
     year = df['Year']
     const = df['Construction_costs']
-    fig = px.line(x=year, y=const, title='Life expectancy in Canada')
-    fig.show()
+    fig3 = px.line(x=year, y=const, title='Life expectancy in Canada')
+    fig3.show()
 
     fig, ax = plt.subplots(1,1)
     plt.plot(year,const,marker=".", markersize="5",color="r", label="construction")
