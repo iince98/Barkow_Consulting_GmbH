@@ -99,10 +99,7 @@ def EDA():
     fig_html1 = mpld3.fig_to_html(fig1)
     components.html(fig_html1, height=600)
     
-    year = df['Year']
-    const = df['Construction_costs']
-    fig3 = px.line(x=year, y=const, title='Life expectancy in Canada')
-    fig3.show()
+
 
     fig, ax = plt.subplots(1,1)
     plt.plot(year,const,marker=".", markersize="5",color="r", label="construction")
