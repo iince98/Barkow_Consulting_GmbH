@@ -11,7 +11,7 @@ import plotly.express as px
 
 
 pd.set_option('display.max_columns', None)
-df = pd.Dataframe(pd.read_csv('son.csv', delimiter=';'))
+df = pd.read_csv('son.csv', delimiter=';')
 #df['birlesik']=df['Year']+df['Quarter']
 df['Quarter'] = df['Quarter'].apply(lambda x: str(int(x.split()[1])*3)) 
 for i in range (len(df['Year'])):
