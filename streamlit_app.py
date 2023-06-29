@@ -7,6 +7,8 @@ import seaborn as sns
 from PIL import Image
 import numpy as np
 import plotly.figure_factory as ff
+import plotly.express as px
+
 
 pd.set_option('display.max_columns', None)
 df = pd.read_csv('son.csv', delimiter=';')
@@ -96,7 +98,9 @@ def EDA():
     plt.legend(loc="upper left")
     fig_html1 = mpld3.fig_to_html(fig1)
     components.html(fig_html1, height=600)
-
+  
+    fig = px.line(df, x="year", y="lifeExp", title='Life expectancy in Canada')
+    fig.show()
 
     fig, ax = plt.subplots(1,1)
     plt.plot(year,const,marker=".", markersize="5",color="r", label="construction")
