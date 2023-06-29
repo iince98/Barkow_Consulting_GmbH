@@ -98,7 +98,7 @@ def EDA():
     plt.legend(loc="upper left")
     fig_html1 = mpld3.fig_to_html(fig1)
     components.html(fig_html1, height=600)
-[
+    
     fig = px.line(x=year, y=const, title='Life expectancy in Canada')
     fig.show()
 
