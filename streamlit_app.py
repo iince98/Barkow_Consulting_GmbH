@@ -99,6 +99,8 @@ def EDA():
     fig_html1 = mpld3.fig_to_html(fig1)
     components.html(fig_html1, height=600)
     
+    year = df['Year']
+    const = df['Construction_costs']
     fig = px.line(x=year, y=const, title='Life expectancy in Canada')
     fig.show()
 
