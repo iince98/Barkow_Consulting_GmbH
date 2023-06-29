@@ -98,7 +98,12 @@ def EDA():
     plt.legend(loc="upper left")
     fig_html1 = mpld3.fig_to_html(fig1)
     components.html(fig_html1, height=600)
-    
+
+
+    x = [1,2,3,4,5]
+    y = [1,3,4,5,6]
+    fig3 = px.line( x = x , y = y, title = 'A simple line graph')
+    fig3.show()
 
 
     fig, ax = plt.subplots(1,1)
