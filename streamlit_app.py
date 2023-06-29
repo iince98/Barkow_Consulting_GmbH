@@ -8,7 +8,34 @@ from PIL import Image
 import numpy as np
 import plotly.figure_factory as ff
 
-    
+def introduction():
+
+    st.header ("Task")
+
+    st.text("Task description: Comparison of house prices, (construction prices - optional), \nand mortgage rates/volumes. The period of the time series is quarterly between \n2003-2023.")
+
+    st.text("Steps:")
+    st.text("1- Get data (Some reference links are provided below.")
+    st.text("2- Create interactive plotly charts (EDA)")
+    st.text("3- Explain general insights gained from basic EDA summary statistics mean, min,\n max , negative/positive correlated etc.,")
+    st.text("4- Explain insights related to the last quarter eg. the change in the \ncurrent quarter is ..., etc.")
+    st.text("5- Show results on a preferably on a Streamlit  app.")
+
+
+    st.header ("Introduction")
+    st.markdown ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps after data collection. Still, they are not limited to where the data is simply visualized, plotted, and manipulated, without any assumptions, to assess thequality of the data and building models.")
+
+    # Add histogram data
+    x1 = np.random.randn(200) - 2
+    x2 = np.random.randn(200)
+    x3 = np.random.randn(200) + 2
+    # Group data together
+    hist_data = [x1, x2, x3]
+    group_labels = ['Group 1', 'Group 2', 'Group 3']
+    # Create distplot with custom bin_size
+    fig = ff.create_distplot(hist_data, group_labels)
+    # Plot!
+    st.plotly_chart(fig, use_container_width=True)    
 
 def b():    
     pd.set_option('display.max_columns', None)
@@ -38,34 +65,7 @@ def b():
     #st.image(image, caption='Barkow Consulting GmbH')
 
     
-def introduction():
 
-    st.header ("Task")
-
-    st.text("Task description: Comparison of house prices, (construction prices - optional), \nand mortgage rates/volumes. The period of the time series is quarterly between \n2003-2023.")
-
-    st.text("Steps:")
-    st.text("1- Get data (Some reference links are provided below.")
-    st.text("2- Create interactive plotly charts (EDA)")
-    st.text("3- Explain general insights gained from basic EDA summary statistics mean, min,\n max , negative/positive correlated etc.,")
-    st.text("4- Explain insights related to the last quarter eg. the change in the \ncurrent quarter is ..., etc.")
-    st.text("5- Show results on a preferably on a Streamlit  app.")
-
-
-    st.header ("Introduction")
-    st.markdown ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps after data collection. Still, they are not limited to where the data is simply visualized, plotted, and manipulated, without any assumptions, to assess thequality of the data and building models.")
-
-    # Add histogram data
-    x1 = np.random.randn(200) - 2
-    x2 = np.random.randn(200)
-    x3 = np.random.randn(200) + 2
-    # Group data together
-    hist_data = [x1, x2, x3]
-    group_labels = ['Group 1', 'Group 2', 'Group 3']
-    # Create distplot with custom bin_size
-    fig = ff.create_distplot(hist_data, group_labels)
-    # Plot!
-    st.plotly_chart(fig, use_container_width=True)
 
     st.header ("Missing values")
     st.markdown ("Finding 'missing values' is widely been in all pre-processing steps to identify null values in the data. With this, we get the number of missing records in each column")
@@ -120,7 +120,6 @@ def introduction():
     with open ('style.css') as file1:
         st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
         st.text (file1.read())
-
 
 def c():
     placeholder = st.empty()
