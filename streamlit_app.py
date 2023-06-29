@@ -102,8 +102,8 @@ def EDA():
 
     x = [1,2,3,4,5]
     y = [1,3,4,5,6]
-    fig3 = px.line( x = x , y = y, title = 'A simple line graph')
-    fig3.show()
+    fig = px.line( x = x , y = y, title = "A simple line graph")
+    fig.show()
 
 
     fig, ax = plt.subplots(1,1)
