@@ -103,6 +103,8 @@ def EDA():
 
 
     fig = px.line( x = year , y = const, title = "A simple line graph")
+    fig = px.line( x = year , y = material, title = "A simple line graph")
+
     st.plotly_chart(fig, use_container_width=True)  
 
 
