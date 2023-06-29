@@ -60,7 +60,7 @@ def Dataset():
     st.markdown ("https://www.destatis.de/en/Themes/Economy/Prices/Construction-Prices-And-Real-Property-Prices/_node.html")
     st.markdown ("https://www.bundesbank.de/dynamic/action/en/statistics/time-series-databases/time-series-databases/745582/745582?tsId=BBK01.SUD131&dateSelect=2023")
 
-def EDA()
+def EDA():
 
     st.markdown(f'<img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com">',unsafe_allow_html=True)
     #image = Image.open('imza_copy.png')
