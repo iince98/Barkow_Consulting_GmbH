@@ -8,20 +8,7 @@ from PIL import Image
 import numpy as np
 import plotly.figure_factory as ff
 
-
-def a():
-
-    # Add histogram data
-    x1 = np.random.randn(200) - 2
-    x2 = np.random.randn(200)
-    x3 = np.random.randn(200) + 2
-    # Group data together
-    hist_data = [x1, x2, x3]
-    group_labels = ['Group 1', 'Group 2', 'Group 3']
-    # Create distplot with custom bin_size
-    fig = ff.create_distplot(hist_data, group_labels)
-    # Plot!
-    st.plotly_chart(fig, use_container_width=True)
+    
 
 def b():    
     pd.set_option('display.max_columns', None)
@@ -67,6 +54,18 @@ def b():
 
         st.header ("Introduction")
         st.markdown ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps after data collection. Still, they are not limited to where the data is simply visualized, plotted, and manipulated, without any assumptions, to assess thequality of the data and building models.")
+
+        # Add histogram data
+        x1 = np.random.randn(200) - 2
+        x2 = np.random.randn(200)
+        x3 = np.random.randn(200) + 2
+        # Group data together
+        hist_data = [x1, x2, x3]
+        group_labels = ['Group 1', 'Group 2', 'Group 3']
+        # Create distplot with custom bin_size
+        fig = ff.create_distplot(hist_data, group_labels)
+        # Plot!
+        st.plotly_chart(fig, use_container_width=True)
 
     st.header ("Missing values")
     st.markdown ("Finding 'missing values' is widely been in all pre-processing steps to identify null values in the data. With this, we get the number of missing records in each column")
