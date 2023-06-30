@@ -101,7 +101,7 @@ def EDA():
     components.html(fig_html1, height=600)
 
  
-    fig = px.line(df, x='Date', y=['AAPL.High', 'AAPL.Low'])
+    fig = px.line(df)
     fig.show()
 
 
