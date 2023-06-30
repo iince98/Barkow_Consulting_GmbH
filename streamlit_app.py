@@ -108,7 +108,7 @@ def EDA():
     # Only thing I figured is - I could do this 
 
     # Show plot 
-    fig4.show()
+    st.write(fig4)
   
 
 
