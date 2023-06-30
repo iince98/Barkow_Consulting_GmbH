@@ -26,7 +26,6 @@ new_residential = df['New_residential_property']
 existing_residential = df['Existing_residential_property']
 mortgage = df['mortgage_rates']
 
-
 with open ('style.css') as file1:
         st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
         st.text (file1.read())
@@ -101,14 +100,19 @@ def EDA():
     fig_html1 = mpld3.fig_to_html(fig1)
     components.html(fig_html1, height=600)
 
-    df1 = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')
 
     # Plot 
-    fig4 = px.line(df, x='Year', y=['Construction_costs', 'Material_costs'])
+    fig4 = px.line(df, x='Year', y=['Construction_costs', 'Material_costs', 'Existing_residential_property', 'New_residential_property', 'House_price_index', 'Labour_costs'])
     # Only thing I figured is - I could do this 
 
     # Show plot 
     st.write(fig4)
+
+    fig5 = px.line(df, x='Year', y=['mortgage_rates'])
+    # Only thing I figured is - I could do this 
+
+    # Show plot 
+    st.write(fig5)
   
 
 
