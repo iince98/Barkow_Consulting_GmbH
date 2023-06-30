@@ -102,7 +102,7 @@ def EDA():
 
 
 
-    fig = px.line( df, x = "year" , y = "value", title = "A simple line graph")
+    fig = px.line(year, const)
     st.write(fig)  
 
 
