@@ -73,7 +73,7 @@ def EDA():
     #image = Image.open('imza_copy.png')
     #st.image(image, caption='Barkow Consulting GmbH')
 
-    st.header ("Missing values")
+    st.subheader ("Missing values")
     st.markdown ("Finding 'missing values' is widely been in all pre-processing steps to identify null values in the data. With this, we get the number of missing records in each column")
 
     st.text(df.isnull().sum())
