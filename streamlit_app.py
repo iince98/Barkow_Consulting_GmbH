@@ -32,7 +32,7 @@ with open ('style.css') as file1:
 
 def introduction():
 
-    st.header ("Task")
+    st.subheader ("Task")
 
     st.text("Task description: Comparison of house prices, (construction prices - optional), \nand mortgage rates/volumes. The period of the time series is quarterly between \n2003-2023.")
 
@@ -44,7 +44,7 @@ def introduction():
     st.text("5- Show results on a preferably on a Streamlit  app.")
 
 
-    st.header ("Introduction")
+    st.subheader ("Introduction")
     st.markdown ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps after data collection. Still, they are not limited to where the data is simply visualized, plotted, and manipulated, without any assumptions, to assess thequality of the data and building models.")
 
     # # Add histogram data
@@ -60,7 +60,7 @@ def introduction():
     # st.plotly_chart(fig, use_container_width=True)    
 
 def Dataset(): 
-    st.header("Data set")
+    st.subheader("Data set")
     st.dataframe(df)
     st.markdown ("Source: https://www.destatis.de/EN/Themes/Economy/Prices/Construction-Prices-And-Real-Property-Prices/_node.html#267504")
     st.markdown ("https://www.destatis.de/en/Themes/Economy/Prices/Construction-Prices-And-Real-Property-Prices/_node.html")
@@ -78,21 +78,21 @@ def EDA():
 
     st.text(df.isnull().sum())
 
-    st.header("Columns")
+    st.subheader("Columns")
     st.text(df.columns)
 
-    st.header("Describe")
+    st.subheader("Describe")
     st.markdown ("The information gives a quick and simple description of the data. It can include Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range, standard deviation, etc. Statistics summary gives a high-level idea to identify whether the data has any outliers, data entry error, distribution of data such as the data is normally distributed or left/right skewed.")
     st.dataframe (df.describe(include="all"))
 
-    st.header ("Correlation Matrix (Heatmap)")
+    st.subheader ("Correlation Matrix (Heatmap)")
     st.markdown ("As the name suggests, Multivariate analysis looks at more than two variables. Multivariate analysis is one of the most useful methods to determine relationships and analyze patterns for any dataset. A heat map is widely been used for Multivariate Analysis. Heat Map gives the correlation between the variables, whether it has a positive or negative correlation. In our example heat map shows the correlation between the variables.")
     fig1, ax1 = plt.subplots()
     sns.heatmap(df.drop(['Year', 'Quarter'], axis=1).corr(), ax=ax1, cmap="YlGnBu", annot=True)
     st.write(fig1)
 
 
-    st.header ("Graphics")
+    st.subheader ("Graphics")
 
     fig1, ax1 = plt.subplots(1,1)
     plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
@@ -131,7 +131,7 @@ def EDA():
     st.write("Explanation on the last quarter of 2023")
     st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
 
-    st.markdown(f'This analysis was prepared by Ibrahim INCE for <img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com">',unsafe_allow_html=True)
+    st.markdown(f'This analysis was prepared by Ibrahim INCE for <img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com" width="200" height="70">',unsafe_allow_html=True)
 
 
 
