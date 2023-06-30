@@ -105,6 +105,11 @@ def EDA():
 
     # Plot 
     fig = px.line(df1, x='Date', y='AAPL.High')
+    # Only thing I figured is - I could do this 
+    fig.add_scatter(x=df['Date'], y=df['AAPL.Low'], mode='lines')
+
+    # Show plot 
+    fig.show()
   
 
 
