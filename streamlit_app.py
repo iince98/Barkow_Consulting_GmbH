@@ -68,8 +68,8 @@ def Dataset():
 
 
 def EDA():
+    st.header ("EDA Multivariate Analysis")
 
-    st.markdown(f'<img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com">',unsafe_allow_html=True)
     #image = Image.open('imza_copy.png')
     #st.image(image, caption='Barkow Consulting GmbH')
 
@@ -85,10 +85,10 @@ def EDA():
     st.markdown ("The information gives a quick and simple description of the data. It can include Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range, standard deviation, etc. Statistics summary gives a high-level idea to identify whether the data has any outliers, data entry error, distribution of data such as the data is normally distributed or left/right skewed.")
     st.dataframe (df.describe(include="all"))
 
-    st.header ("EDA Multivariate Analysis (Heatmap)")
+    st.header ("Correlation Matrix (Heatmap)")
     st.markdown ("As the name suggests, Multivariate analysis looks at more than two variables. Multivariate analysis is one of the most useful methods to determine relationships and analyze patterns for any dataset. A heat map is widely been used for Multivariate Analysis. Heat Map gives the correlation between the variables, whether it has a positive or negative correlation. In our example heat map shows the correlation between the variables.")
     fig1, ax1 = plt.subplots()
-    sns.heatmap(df.drop(['Year', 'Quarter'], axis=1).corr(), ax=ax1)
+    sns.heatmap(df.drop(['Year', 'Quarter'], axis=1).corr(), ax=ax1, cmap="YlGnBu", annot=True)
     st.write(fig1)
 
 
@@ -130,6 +130,9 @@ def EDA():
 
     st.write("Explanation on the last quarter of 2023")
     st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
+
+    st.markdown(f'This analysis was prepared by Ibrahim INCE for <img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com">',unsafe_allow_html=True)
+
 
 
     
