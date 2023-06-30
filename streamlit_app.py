@@ -79,7 +79,7 @@ def EDA():
     st.dataframe(df.isnull().sum())
 
     st.subheader("Columns")
-    st.text(df.columns)
+    st.dataframe(df.columns)
 
     st.subheader("Describe")
     st.markdown ("The information gives a quick and simple description of the data. It can include Count, Mean, Standard Deviation, median, mode, minimum value, maximum value, range, standard deviation, etc. Statistics summary gives a high-level idea to identify whether the data has any outliers, data entry error, distribution of data such as the data is normally distributed or left/right skewed.")
