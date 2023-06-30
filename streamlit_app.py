@@ -102,8 +102,8 @@ def EDA():
 
 
 
-    fig = px.line(year, const, x="year", y="const")
-    fig1 = px.line(year, material, x="year", y="material")
+    fig = px.line(year, const)
+    fig1 = px.line(year, material)
 
     st.write(fig)  
     st.write(fig1)  
