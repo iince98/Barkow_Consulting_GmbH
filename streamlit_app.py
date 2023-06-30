@@ -47,17 +47,17 @@ def introduction():
     st.header ("Introduction")
     st.markdown ("Data pre-processing, Feature Engineering, and Exploratory Data Analysis (EDA) are fundamental early steps after data collection. Still, they are not limited to where the data is simply visualized, plotted, and manipulated, without any assumptions, to assess thequality of the data and building models.")
 
-    # Add histogram data
-    x1 = np.random.randn(200) - 2
-    x2 = np.random.randn(200)
-    x3 = np.random.randn(200) + 2
-    # Group data together
-    hist_data = [x1, x2, x3]
-    group_labels = ['Group 1', 'Group 2', 'Group 3']
-    # Create distplot with custom bin_size
-    fig = ff.create_distplot(hist_data, group_labels)
-    # Plot!
-    st.plotly_chart(fig, use_container_width=True)    
+    # # Add histogram data
+    # x1 = np.random.randn(200) - 2
+    # x2 = np.random.randn(200)
+    # x3 = np.random.randn(200) + 2
+    # # Group data together
+    # hist_data = [x1, x2, x3]
+    # group_labels = ['Group 1', 'Group 2', 'Group 3']
+    # # Create distplot with custom bin_size
+    # fig = ff.create_distplot(hist_data, group_labels)
+    # # Plot!
+    # st.plotly_chart(fig, use_container_width=True)    
 
 def Dataset(): 
     st.header("Data set")
