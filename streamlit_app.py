@@ -104,12 +104,11 @@ def EDA():
     df1 = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')
 
     # Plot 
-    fig = px.line(df1, x='Date', y='AAPL.High')
+    fig4 = px.line(df1, x='Date', y='AAPL.High')
     # Only thing I figured is - I could do this 
-    fig.add_scatter(x=df['Date'], y=df['AAPL.Low'], mode='lines')
 
     # Show plot 
-    fig.show()
+    fig4.show()
   
 
 
