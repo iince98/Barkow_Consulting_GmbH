@@ -94,13 +94,6 @@ def EDA():
 
     st.subheader ("Graphics")
 
-    fig1, ax1 = plt.subplots(1,1)
-    plt.plot(year,mortgage,marker=".", markersize="5",color="k", label="mortgage")
-    plt.legend(loc="upper left")
-    fig_html1 = mpld3.fig_to_html(fig1)
-    components.html(fig_html1, height=600)
-
-
     # Plot 
     fig4 = px.line(df, x='Year', y=['Construction_costs', 'Material_costs', 'Existing_residential_property', 'New_residential_property', 'House_price_index', 'Labour_costs'])
     # Only thing I figured is - I could do this 
@@ -116,19 +109,8 @@ def EDA():
   
 
 
-    fig, ax = plt.subplots(1,1)
-    plt.plot(year,const,marker=".", markersize="5",color="r", label="construction")
-    plt.plot(year,material,marker=".", markersize="5",color="b", label="material" )
-    plt.plot(year,labour,marker=".", markersize="5",color="g", label="labour")
-    plt.plot(year,house_price,marker=".", markersize="5",color="c", label="house_price")
-    plt.plot(year,new_residential,marker=".", markersize="5",color="m", label="new_residential")
-    plt.plot(year,existing_residential,marker=".", markersize="5",color="y", label="existing_residential")
-    plt.legend(loc="upper left")
-    fig_html = mpld3.fig_to_html(fig)
-    components.html(fig_html, height=600)
 
-
-    st.write("Explanation on the last quarter of 2023")
+    st.subheader("Explanation on the last quarter of 2023")
     st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
 
     st.markdown(f'This analysis was prepared by Ibrahim INCE for <img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com" width="200" height="70" margin-left:20px>',unsafe_allow_html=True)
