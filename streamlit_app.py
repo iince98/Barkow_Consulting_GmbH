@@ -104,7 +104,7 @@ def EDA():
     df1 = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')
 
     # Plot 
-    fig4 = px.line(df, x='Year', y='Constuction_costs')
+    fig4 = px.line(df, x='Year', y='Construction_costs')
     # Only thing I figured is - I could do this 
 
     # Show plot 
