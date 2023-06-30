@@ -26,6 +26,9 @@ new_residential = df['New_residential_property']
 existing_residential = df['Existing_residential_property']
 mortgage = df['mortgage_rates']
 
+fig = px.line(df)
+fig.show()
+
 with open ('style.css') as file1:
         st.markdown(f'<style>{file1.read()}</style>',unsafe_allow_html=True)
         st.text (file1.read())
@@ -101,8 +104,7 @@ def EDA():
     components.html(fig_html1, height=600)
 
  
-    fig = px.line(year, const)
-    fig.show()
+  
 
 
     fig, ax = plt.subplots(1,1)
