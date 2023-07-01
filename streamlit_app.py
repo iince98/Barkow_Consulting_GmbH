@@ -18,7 +18,7 @@ for i in range (len(df['Year'])):
     df['Year'][i] = str(df['Year'][i]) + df['Quarter'][i]
 df['Year'] = df['Year'].apply(lambda x: pd.to_datetime(str(x), format='%Y%m'))
 year = df['Year']
-const = df['Construction_costs']
+const = df['Construction_costs_total']
 material = df['Material_costs']
 labour = df['Labour_costs']
 house_price = df['House_price_index']
