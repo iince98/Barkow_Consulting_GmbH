@@ -95,13 +95,13 @@ def EDA():
     st.subheader ("Graphics")
 
     # Plot 
-    fig4 = px.line(df, x='Year', y=['Construction_costs', 'Material_costs', 'Existing_residential_property', 'New_residential_property', 'House_price_index', 'Labour_costs'])
+    fig4 = px.line(df, x='Year', y=['Construction_costs_total', 'Material_costs', 'Existing_residential_property', 'New_residential_property', 'House_price_index', 'Labour_costs'])
     # Only thing I figured is - I could do this 
 
     # Show plot 
     st.write(fig4)
 
-    fig5 = px.line(df, x='Year', y=['mortgage_rates'])
+    fig5 = px.line(df, x='Year', y=['mortgage_rates','mortgage_volumes'])
     # Only thing I figured is - I could do this 
 
     # Show plot 
