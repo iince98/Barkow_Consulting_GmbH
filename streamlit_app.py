@@ -111,7 +111,7 @@ def EDA():
 
     # Show plot 
     st.write(fig5)
-    st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
+    st.markdown ("When it comes to 'mortgage' issues, one can easily see the negative between rates and volumes. But there is a different trend / interrelation between them in period December 2021-March 2022. The general relationship can not be seen in this 4 months.")
 
   
 
