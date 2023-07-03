@@ -90,6 +90,8 @@ def EDA():
     fig1, ax1 = plt.subplots()
     sns.heatmap(df.drop(['Year','Quarter'], axis=1).corr(), ax=ax1, cmap="YlGnBu", annot=True)
     st.write(fig1)
+    st.markdown ("As is in the matrix, the highest positive correlation is between 'Construction_costs_total' and 'Material_costs' with the value '0.99'.")
+
 
 
     st.subheader ("Graphics")
