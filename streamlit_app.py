@@ -88,7 +88,7 @@ def EDA():
     st.subheader ("Correlation Matrix (Heatmap)")
     st.markdown ("As the name suggests, Multivariate analysis looks at more than two variables. Multivariate analysis is one of the most useful methods to determine relationships and analyze patterns for any dataset. A heat map is widely been used for Multivariate Analysis. Heat Map gives the correlation between the variables, whether it has a positive or negative correlation. In our example heat map shows the correlation between the variables.")
     fig1, ax1 = plt.subplots()
-    sns.heatmap(df.drop(['Year'], axis=1).corr(), ax=ax1, cmap="YlGnBu", annot=True)
+    sns.heatmap(df.drop(['Year','Quarter'], axis=1).corr(), ax=ax1, cmap="YlGnBu", annot=True)
     st.write(fig1)
 
 
