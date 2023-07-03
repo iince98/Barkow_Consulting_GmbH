@@ -102,18 +102,20 @@ def EDA():
 
     # Show plot 
     st.write(fig4)
+    st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
+
 
     fig5 = px.line(df, x='Year', y=['mortgage_rates','mortgage_volumes'])
     # Only thing I figured is - I could do this 
 
     # Show plot 
     st.write(fig5)
+    st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
+
   
 
 
 
-    st.subheader("Explanation on the last quarter of 2023")
-    st.markdown ("Although the index values of 'Labour, Material and Construction' shows a rising trend, 'House Prices' decreses. And also it very clear that the percentage of change is also different. It is advised to have a deep look into other factor which effects 'House Prices'. An officiail state explanation may have an impact on 'House Prices'. It would be better to have and use more features having possible effect on 'House Prices'.")
 
     st.markdown(f'This analysis was prepared by Ibrahim INCE for <img src="https://www.barkowconsulting.com/img/barkow_consulting_logo.svg" alt="W3Schools.com" width="200" height="70" margin-left:20px>',unsafe_allow_html=True)
 
