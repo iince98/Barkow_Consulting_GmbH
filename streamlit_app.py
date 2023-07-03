@@ -112,6 +112,11 @@ def EDA():
     # Show plot 
     st.write(fig5)
     st.markdown ("When it comes to 'mortgage' issues, one can easily see the negative between rates and volumes. But there is a different trend / interrelation between them in period December 2021-March 2022. The general relationship can not be seen in this 4 months.")
+    st.markdown ("The increase in Labour_costs far behind the others, the increase in mortgage rates causes a decrease in mortgage volumes. The decrease in mortgage volumes shows that people do not buy mortgages because of high interest rates. This is causing house prices to drop in the last few quarters.")
+
+
+
+
 
   
 
